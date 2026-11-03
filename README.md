@@ -1,6 +1,6 @@
 # Email on Acid MCP Server
 
-An MCP server exposing every documented [Email on Acid API v5](https://api.emailonacid.com/docs/) request as a tool — 24 tools across authentication, email client lists, email (rendering) testing, and spam testing.
+An MCP server exposing every documented [Email on Acid API v5](https://api.emailonacid.com/docs/) request as a tool — 24 tools across authentication, email client lists, email (rendering) testing, and spam testing. Built at [Knak](https://knak.com?utm_source=github&utm_medium=referral&utm_campaign=knak-labs-ong).
 
 ## Setup
 
@@ -101,3 +101,13 @@ The test suite spawns the server over stdio (no separate server start needed) an
 - Test results are retained by Email on Acid for 90 days.
 - `search_email_tests` / `search_spam_tests` use `from_date` / `to_date` parameter names (mapped to the API's `from` / `to`) because `from` is reserved in Python.
 - Enterprise-only parameters (`reference_id`, `customer_id`, `headers` x-headers) are included but will be ignored or rejected on non-enterprise plans.
+
+## Built at Knak
+
+[Knak](https://knak.com?utm_source=github&utm_medium=referral&utm_campaign=knak-labs-ong)
+is the agentic production layer for enterprise marketing: where marketers and AI
+agents build on-brand emails and landing pages, then sync them to the team's
+marketing automation platform.
+
+We use this server to put Email on Acid's rendering and spam checks in front of
+an agent, so a build can be tested without leaving the conversation.
